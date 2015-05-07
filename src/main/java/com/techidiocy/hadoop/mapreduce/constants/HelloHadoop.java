@@ -3,18 +3,17 @@
  */
 package com.techidiocy.hadoop.mapreduce.constants;
 
+
 /**
- * @author Accolite
+ * @author saurabh
  *
  */
-public class MainConstants {
+public class HelloHadoop {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		System.out.println("Hello Hadoop !");
-
 	}
-
 }
