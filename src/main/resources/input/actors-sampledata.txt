@@ -1,0 +1,11 @@
+Abhishek	Aishwarya|Karan|Shahrukh|Aamir
+Aishwarya	Abhishek|Karan|Shahrukh|Aamir
+Aamir	Abhishek|Aishwarya|Shahrukh|Salman|Katrina|Karan
+Karan	Abhishek|Aishwarya|Aamir|Salman|Shahrukh|Deepika|Ranbir|Ranveer
+Shahrukh	Abhishek|Aishwarya|Aamir|Katrina|Deepika|Karan
+Salman	Aamir|Zarine|Deepika|Katrina|Karan
+Katrina	Aamir|Salman|Ranbir|Shahrukh
+Zarine	Salman
+Deepika	Karan|Shahrukh|Salman|Ranveer
+Ranveer	Deepika|Karan
+Ranbir	Katrina|Karan
