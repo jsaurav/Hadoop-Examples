@@ -8,7 +8,7 @@
 
 ### WordCount
 ```sh
-$ hadoop jar com.techidiocy.hadoop.mapreduce.drivers.WordCountDriver input_file_location output_file_location
+$ hadoop jar com.techidiocy.hadoop.mapreduce.drivers.WordCountDriver <input_file_location> <output_file_location>
 ```
 
 ### IPLTeamFinder
