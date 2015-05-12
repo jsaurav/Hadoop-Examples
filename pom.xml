@@ -27,20 +27,38 @@
 			<artifactId>hadoop-core</artifactId>
 			<version>${hadoop.core.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.5</version>
+		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<!-- Cloudera Repository -->
+			<id>cloudera</id>
+			<url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-				<finalName>hadoop-examples</finalName>
-				<appendAssemblyId>false</appendAssemblyId>
-<!-- 					<archive> -->
-<!-- 						<manifest> -->
-<!-- 							<mainClass>com.techidiocy.hadoop.mapreduce.drivers.WordCountDriver</mainClass> -->
-<!-- 							<mainClass>com.techidiocy.hadoop.mapreduce.constants.MainConstants</mainClass> -->
-<!-- 						</manifest> -->
-<!-- 					</archive> -->
+					<finalName>hadoop-examples</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+					<!-- <archive> -->
+					<!-- <manifest> -->
+					<!-- <mainClass>com.techidiocy.hadoop.mapreduce.drivers.WordCountDriver</mainClass> -->
+					<!-- <mainClass>com.techidiocy.hadoop.mapreduce.constants.MainConstants</mainClass> -->
+					<!-- </manifest> -->
+					<!-- </archive> -->
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
