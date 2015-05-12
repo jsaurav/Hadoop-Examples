@@ -6,14 +6,18 @@
 
 #How to run the MR programs
 
-#WordCount
+WordCount
+
 $ hadoop jar com.techidiocy.hadoop.mapreduce.drivers.WordCountDriver <input_file_location> <output_file_location>
 
-#IPLTeamFinder
+IPLTeamFinder
+
 $ hadoop jar com.techidiocy.hadoop.mapreduce.drivers.IPLTeamDriver <input_file_location> <output_file_location>
 
-#FacebookMutualFriends
+FacebookMutualFriends
+
 $ hadoop jar com.techidiocy.hadoop.mapreduce.drivers.FacebookMutualFriendsDriver <input_file_location> <output_file_location>
 
-#FlipkartCorrelationCoefficient
+FlipkartCorrelationCoefficient
+
 $ hadoop jar com.techidiocy.hadoop.mapreduce.drivers.FlipkartCorrelationCoeffDriver <input_file_location> <output_file_location>
