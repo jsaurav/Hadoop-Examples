@@ -24,8 +24,9 @@ public class FlipkartCorrelationCoeffMapper extends Mapper<Text,Text,Text,Item> 
 		String data = value.toString();
 		String price = data.substring(0,data.indexOf(","));
 		String rating = data.substring(data.indexOf(",")+1);
-		context.write(new Text(productName), new Item(new LongWritable(new Long(price)),
-				new IntWritable(new Integer(rating))));
+		if(!productName.equals(key.toString()))
+		context.write(new Text(productName), new Item(new LongWritable(new Long(price.trim())),
+				new IntWritable(new Integer(rating.trim()))));
 	}
 
 	private String getProductName(Text key) {

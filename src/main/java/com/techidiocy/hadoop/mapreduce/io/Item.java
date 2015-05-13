@@ -20,6 +20,10 @@ public class Item implements WritableComparable<Item> {
 	private LongWritable itemPrice;
 	private IntWritable rating;
 	
+	public Item() {
+		
+	}
+	
 	public Item(LongWritable itemPrice , IntWritable rating) {
 		this.itemPrice= itemPrice;
 		this.rating = rating;
